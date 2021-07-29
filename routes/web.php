@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('products', function (){
+   return view('admin.product');
+});
 Route::prefix('admin')->group(function () {
 
     Route::get('login', [\App\Http\Controllers\LoginController::class, 'showFormLogin'])->name('admin.showFormLogin');

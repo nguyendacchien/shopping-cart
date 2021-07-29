@@ -420,7 +420,7 @@
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('css/sb-admin-2.min.css') }}"></script>
 
-
+<script src="{{ asset('js/my.js') }}"></script>
 </body>
 
 </html>

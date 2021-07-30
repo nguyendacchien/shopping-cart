@@ -13,6 +13,6 @@ class FoodsSeeder extends Seeder
      */
     public function run()
     {
-        //
+
     }
 }

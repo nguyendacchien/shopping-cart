@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('products', function (){
+Route::get('product', function (){
    return view('admin.product');
 });
 Route::prefix('admin')->group(function () {
@@ -41,9 +41,9 @@ Route::prefix('admin')->group(function () {
 
         Route::get('current-weather', [\App\Http\Controllers\WeatherController::class, 'showCurrentWeather'])->name('weather.showCurrentWeather');
 
-
     });
 
 });
+Route::get('/cart',[\App\Http\Controllers\ProductController::class,'getCart'])->name('shopping.cart');
 
 

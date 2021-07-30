@@ -46,7 +46,7 @@
     </div>
 </nav>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary btn-cart" data-toggle="modal" data-target="#exampleModal">
     Shopping Cart
 </button>
 <table class="table table-striped">
@@ -64,6 +64,9 @@
     </tbody>
 </table>
 
+<div id="product-cards" class="container-fluid row">
+
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -91,6 +94,7 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save changes</button>
